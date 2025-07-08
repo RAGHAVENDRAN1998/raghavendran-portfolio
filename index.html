@@ -1,54 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Raghavendran Anandarajan | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <meta name="description" content="Portfolio of Raghavendran Anandarajan - Computer Science Graduate, Python Enthusiast, AI & Data Analytics." />
+  <meta name="keywords" content="Raghavendran Anandarajan, Portfolio, Computer Science, Python, AI, Data Analytics, Projects" />
+  <meta name="author" content="Raghavendran Anandarajan" />
+  <meta property="og:title" content="Raghavendran Anandarajan Portfolio" />
+  <meta property="og:description" content="Explore projects and skills of Raghavendran Anandarajan, Computer Science graduate and AI enthusiast." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://your-portfolio-url.com" />
+  <meta property="og:image" content="http://your-portfolio-url.com/images/og-image.png" />
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Your Name</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav role="navigation" aria-label="Primary Navigation">
+      <h1><a href="#home" class="logo-link" aria-label="Homepage">Raghavendran Anandarajan</a></h1>
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Raghavendran_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Web Developer | Problem Solver | Lifelong Learner</p>
-  </section>
+  <main>
+    <section id="home" class="hero" tabindex="0" aria-label="Welcome Section">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Computer Science Graduate | Python Enthusiast | AI & Data Analytics</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>This is a short bio about you. You can edit this later to include your background, passions, and goals.</p>
-  </section>
+    <section id="about" class="reveal" tabindex="0" aria-label="About Me Section">
+      <h2>About Me</h2>
+      <p>I am a Computer Science graduate with a background in Electrical Engineering, experienced in Python, C, and data analysis. I’ve managed business analytics projects and contributed to healthcare-related AI datasets. My strengths include communication, adaptability, and a proven track record of delivering results in dynamic environments.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <img src="images/project1.png" alt="Project Screenshot">
-      <h3>Project Title</h3>
-      <p>Short description of what the project does. Replace this with your real work later.</p>
-      <a href="#">View Project</a>
-    </div>
-  </section>
+    <section id="projects" class="reveal" tabindex="0" aria-label="Projects Section">
+      <h2>Projects</h2>
+      <div class="project" tabindex="0">
+        <img src="images/project1.png" alt="Electronic Door Lock System">
+        <h3>Electronic Door Lock System</h3>
+        <p>Built a fingerprint authentication system to control access electronically, enhancing security through biometrics.</p>
+      </div>
+      <div class="project" tabindex="0">
+        <img src="images/project1.png" alt="Li-Fi Communication Seminar">
+        <h3>Li-Fi Communication Seminar</h3>
+        <p>Presented a seminar on wireless data transmission using visible light, exploring future alternatives to Wi-Fi.</p>
+      </div>
+      <div class="project" tabindex="0">
+        <img src="images/project1.png" alt="Solar Panel Workshop">
+        <h3>Solar Panel Workshop</h3>
+        <p>Completed hands-on training in solar energy technologies, including panel configuration and optimization.</p>
+      </div>
+      <div class="project" tabindex="0">
+        <img src="images/project1.png" alt="PCB Design Workshop">
+        <h3>PCB Design Workshop</h3>
+        <p>Learned techniques such as circuit layout, etching, and component assembly to create functioning PCBs.</p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>GitHub: <a href="#">your-github</a></p>
-    <p>LinkedIn: <a href="#">your-linkedin</a></p>
-  </section>
+    <section id="contact" class="reveal" tabindex="0" aria-label="Contact Section">
+      <h2>Contact</h2>
+      <div class="form-wrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbL-tXNjiF6q6mXAcvvPPfvHZJ3r9bTDEbo5HHV_1MUTNdPw/viewform?embedded=true" title="Contact Form" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <p>Email: <a href="mailto:a.raghavendran1998@gmail.com">a.raghavendran1998@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/raghavendran-anandarajan-5177b516b/" target="_blank" rel="noopener noreferrer">raghavendran-anandarajan</a></p>
+      <p>Location: Stockton, CA</p>
+      <p>Phone: +1 (209) 403-3454</p>
+      <div class="socials" role="contentinfo">
+        <a href="https://github.com/raghavendran-anandarajan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/raghavendran-anandarajan-5177b516b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  <footer role="contentinfo">
+    <p>&copy; 2025 Raghavendran Anandarajan. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
