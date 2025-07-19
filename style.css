@@ -1,28 +1,21 @@
-/* ===== Particle Background ===== */
-#tsparticles {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* behind all content */
-  background: #0d47a1; /* deep tech blue */
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* ===== General Styles ===== */
+/* Body */
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   background: #f9fbfd;
   color: #333;
+  line-height: 1.6;
 }
 
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 1rem;
-}
-
+/* Links */
 a {
-  color: inherit;
+  color: #0077b6;
   text-decoration: none;
 }
 
@@ -30,115 +23,121 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-  position: relative;
-  color: #fff;
-  text-align: center;
-  padding: 6rem 1rem 4rem;
-  overflow: hidden;
-  z-index: 1; /* above particles */
+/* Navbar */
+.navbar {
+  background: #0077b6;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #caf0f8;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem 4rem;
 }
 
 .profile-pic {
-  position: relative;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 4px solid #fff;
   object-fit: cover;
   margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.7);
 }
 
-.hero h1, .hero p, nav {
-  position: relative;
-  z-index: 1;
-  margin: 0.5rem 0;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  font-weight: 700;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #caf0f8;
-}
-
-/* ===== Sections ===== */
+/* Sections */
 section {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 4rem auto;
   padding: 0 1rem;
 }
 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0077b6;
+}
+
+/* Skills */
 .skills ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
   padding: 0;
 }
 
 .skills li {
-  display: inline-block;
   background: #00b4d8;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem;
+  color: white;
+  padding: 0.5rem 1.25rem;
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.9rem;
-}
-
-.skills li i {
-  margin-right: 8px;
-}
-
-.project, .certifications img {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.project:hover, .certifications img:hover {
-  transform: scale(1.05);
-}
-
-.certifications {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 }
 
-.cert-pic {
-  width: 200px;
-  border-radius: 8px;
-  cursor: pointer;
+.skills li i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
 }
 
-/* ===== Footer ===== */
+/* Projects */
+.project {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
 footer {
   background: #0077b6;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
 
-/* ===== Fade-in Animation ===== */
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
