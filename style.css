@@ -11,8 +11,8 @@ h1, h2 {
 
 .hero {
   position: relative;
-  background: linear-gradient(-45deg, #0077b6, #00b4d8, #90e0ef, #caf0f8);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #0077b6, #00b4d8, #8e2de2, #4a00e0);
+  background-size: 600% 600%;
   animation: gradientBG 15s ease infinite;
   color: #fff;
   text-align: center;
@@ -42,6 +42,7 @@ h1, h2 {
 .hero h1, .hero p, nav {
   position: relative;
   z-index: 1;
+  margin: 0.5rem 0;
 }
 
 nav a {
@@ -74,6 +75,8 @@ section {
   padding: 0.5rem 1rem;
   margin: 0.3rem;
   border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .skills li i {
@@ -97,11 +100,14 @@ section {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .cert-pic {
   width: 200px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 footer {
