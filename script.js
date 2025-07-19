@@ -1,23 +1,31 @@
-// Smooth scrolling for nav links
-document.querySelectorAll('nav a.nav-link').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-      // Focus for accessibility
-      targetSection.setAttribute('tabindex', '-1');
-      targetSection.focus();
+// script.js
+
+// Add active link highlight
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+// Fade-in sections on scroll
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  sections.forEach(sec => {
+    const secTop = sec.getBoundingClientRect().top;
+    if (secTop < triggerBottom) {
+      sec.style.opacity = 1;
+      sec.style.transform = 'translateY(0)';
     }
   });
 });
 
-// ScrollReveal animations
-ScrollReveal().reveal('.reveal', {
-  distance: '50px',
-  duration: 800,
-  easing: 'ease-in-out',
-  origin: 'bottom',
-  interval: 200
+// Initialize fade-up effect
+sections.forEach(sec => {
+  sec.style.opacity = 0;
+  sec.style.transform = 'translateY(20px)';
 });
