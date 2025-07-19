@@ -1,31 +1,19 @@
 // script.js
+const faders = document.querySelectorAll('.fade-in');
 
-// Add active link highlight
-const navLinks = document.querySelectorAll('nav a');
+const appearOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(l => l.classList.remove('active'));
-    link.classList.add('active');
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    appearOnScroll.unobserve(entry.target);
   });
-});
+}, appearOptions);
 
-// Fade-in sections on scroll
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-  const triggerBottom = window.innerHeight * 0.85;
-  sections.forEach(sec => {
-    const secTop = sec.getBoundingClientRect().top;
-    if (secTop < triggerBottom) {
-      sec.style.opacity = 1;
-      sec.style.transform = 'translateY(0)';
-    }
-  });
-});
-
-// Initialize fade-up effect
-sections.forEach(sec => {
-  sec.style.opacity = 0;
-  sec.style.transform = 'translateY(20px)';
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
 });
