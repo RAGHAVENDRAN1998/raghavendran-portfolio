@@ -6,14 +6,12 @@
   <title>Raghavendran Anandarajan | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
   <header class="hero">
-    <canvas id="hero-bg"></canvas>
     <nav class="navbar">
-      <ul>
+      <div class="logo">Raghavendran</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -21,63 +19,57 @@
       </ul>
     </nav>
     <div class="hero-content">
-      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
       <h1>Raghavendran Anandarajan</h1>
       <p>Master's Student in Computer Science | Aspiring Web Developer</p>
     </div>
   </header>
 
-  <section id="about" class="fade-in">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
       I am a Computer Science graduate student passionate about web development and product-based tech companies. I enjoy building practical projects and learning new technologies to solve real-world problems.
     </p>
   </section>
 
-  <section id="skills" class="skills fade-in">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul>
-      <li><i class="fab fa-python"></i> Python</li>
-      <li><i class="fab fa-html5"></i> HTML</li>
-      <li>C Programming</li>
-      <li>Data Analysis</li>
-      <li>Team Leadership</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">C Programming</div>
+      <div class="skill-card">Data Analysis</div>
+      <div class="skill-card">Team Leadership</div>
+    </div>
   </section>
 
-  <section id="projects" class="fade-in">
+  <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-card">
       <h3>Electronic Door Lock System</h3>
       <p>Built a fingerprint authentication access system.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Li-Fi Communication Seminar</h3>
       <p>Research on wireless data transmission via visible light.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Solar Panel Workshop</h3>
       <p>Hands-on experience in solar energy technologies.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Portfolio Website (In Progress)</h3>
       <p>This modern responsive portfolio website showcasing my work.</p>
     </div>
-    <h3>Certifications</h3>
-    <div class="certifications">
-      <img src="cert1.jpg" alt="Certification 1" class="cert-pic" />
-      <img src="cert2.jpg" alt="Certification 2" class="cert-pic" />
-    </div>
   </section>
 
-  <section id="contact" class="contact fade-in">
+  <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:a.raghavendran1998@gmail.com">a.raghavendran1998@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/raghavendran-anandarajan-5177b516b/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></p>
+    <p>Email: <a href="mailto:a.raghavendran1998@gmail.com">a.raghavendran1998@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/raghavendran-anandarajan-5177b516b/" target="_blank">Connect on LinkedIn</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Raghavendran Anandarajan</p>
+    &copy; 2025 Raghavendran Anandarajan
   </footer>
 
   <script src="script.js"></script>
